@@ -1,10 +1,7 @@
-bits 32
-global _main
-
+    global _main
+    section .text
 _main:
     mov rax, 3      
-    add rdi, rax, 5
-    mov rdx
+    add rdi, 5
+    mov rax, 0x02000001
     syscall
-message:
-    db add, 10
